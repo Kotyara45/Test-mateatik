@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Математичний тренажер</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="startScreen">
+  <button class="btn" onclick="startGame()">Почати</button>
+</div>
+
+<div id="gameScreen" class="hidden">
+  <div id="timer">60</div>
+  <div class="question" id="question"></div>
+  <div class="answers" id="answers"></div>
+</div>
+
+<div id="statsScreen" class="hidden">
+  <h2>Статистика</h2>
+  <p>Правильні: <span id="correctCount"></span></p>
+  <p>Неправильні: <span id="wrongCount"></span></p>
+  <p>Відсоток: <span id="accuracy"></span>%</p>
+  <button class="btn" onclick="startGame()">Почати знову</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
